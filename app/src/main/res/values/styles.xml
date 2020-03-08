@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorTextPrimary</item>
+        <item name="android:textColorSecondary">@color/colorTextSecondary</item>
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">@dimen/activity_title_text_size</item>
+    </style>
+
+    <style name="TabLayout.TitleText" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">@dimen/menu_title_text_size</item>
+    </style>
+
+    <!--<style name="NavigationTheme" parent="AppTheme">-->
+        <!--<item name="android:textSize">@dimen/menu_title_size</item>-->
+        <!--<item  name="android:textStyle">bold</item>-->
+    <!--</style>-->
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginRight">@dimen/nav_drawer_margin_offset</item>
+        <item name="android:textSize">@dimen/activity_sub_title_text_size</item><!-- text size in menu-->
+        <item name="android:listPreferredItemHeightSmall">@dimen/menu_title_size</item><!-- item size in menu-->    </style>
+</resources>

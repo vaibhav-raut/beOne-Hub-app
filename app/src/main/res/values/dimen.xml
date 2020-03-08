@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="activity_title_text_size">22dp</dimen>
+    <dimen name="menu_title_text_size">13dp</dimen>
+    <dimen name="menu_title_size">28dp</dimen>
+    <dimen name="drawer_header_height">100dp</dimen>
+    <dimen name="nav_drawer_margin_offset">-120dp</dimen>
+    <dimen name="activity_sub_title_text_size">16dp</dimen>
+    <dimen name="data_table_text_size">12dp</dimen>
+    <dimen name="data_table_text_size2">13dp</dimen>
+    <dimen name="data_table_text_size3">14dp</dimen>
+
+    <!--Dialog -->
+    <dimen name="dialog_height">120dp</dimen>
+    <dimen name="dialog_button_width">80dp</dimen>
+    <dimen name="dialog_button_height">30dp</dimen>
+    <dimen name="dialog_message_margin">10dp</dimen>
+    <dimen name="dialog_button_margin">15dp</dimen>
+    <dimen name="dialog_button_margin_min">10dp</dimen>
+    <dimen name="dialog_button_margin_max">60dp</dimen>
+    <dimen name="dialog_button_single_margin">60dp</dimen>
+    <dimen name="dialog_message_text_size">12dp</dimen>
+    <dimen name="dialog_button_text_size">12dp</dimen>
+
+    <!--Stock Item Info Dialog -->
+    <dimen name="sii_outter_margin">12dp</dimen>
+    <dimen name="sii_padding_max">8dp</dimen>
+    <dimen name="sii_padding_min">2dp</dimen>
+
+    <!--Stock Action Activity-->
+    <dimen name="saa_button_margin_ver">16dp</dimen>
+    <dimen name="saa_button_margin_hor">8dp</dimen>
+    <dimen name="saa_button_margin_top1">0dp</dimen>
+    <dimen name="saa_button_text_size">12dp</dimen>
+
+</resources>

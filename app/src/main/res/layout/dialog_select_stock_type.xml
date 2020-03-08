@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sii_outter_margin"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/d_stock_type_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/d_stock_type_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:text="ID"
+            android:elevation="2dp" />
+
+        <TextView
+            android:id="@+id/d_stock_type_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:text="Stock Type"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/d_brand_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:text="Brand"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/d_select"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorButtonCyan"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/d_stock_type_ll_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/d_stock_type_id_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/data_table_text_size"
+                android:background="@drawable/rectangle_border"
+                android:text="ID"
+                android:elevation="2dp" />
+
+            <TextView
+                android:id="@+id/d_stock_type_name_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/data_table_text_size"
+                android:background="@drawable/rectangle_border"
+                android:text="Stock Type"
+                android:elevation="2dp"/>
+
+            <TextView
+                android:id="@+id/d_brand_name_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/data_table_text_size"
+                android:background="@drawable/rectangle_border"
+                android:text="Brand"
+                android:elevation="2dp"/>
+
+            <TextView
+                android:id="@+id/d_select_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="@color/colorButtonCyan"
+                android:textSize="@dimen/data_table_text_size"
+                android:background="@drawable/rectangle_border"
+                android:textStyle="bold"
+                android:text="Select"
+                android:elevation="2dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/d_stock_type_ll_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/d_stock_type_id_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/data_table_text_size"
+                android:background="@drawable/rectangle_border"
+                android:text="ID"
+                android:elevation="2dp" />
+
+            <TextView
+                android:id="@+id/d_stock_type_name_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/data_table_text_size"
+                android:background="@drawable/rectangle_border"
+                android:text="Stock Type"
+                android:elevation="2dp"/>
+
+            <TextView
+                android:id="@+id/d_brand_name_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/data_table_text_size"
+                android:background="@drawable/rectangle_border"
+                android:text="Brand"
+                android:elevation="2dp"/>
+
+            <TextView
+                android:id="@+id/d_select_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="@color/colorButtonCyan"
+                android:textSize="@dimen/data_table_text_size"
+                android:background="@drawable/rectangle_border"
+                android:textStyle="bold"
+                android:text="Select"
+                android:elevation="2dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/d_stock_type_ll_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/d_stock_type_id_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/data_table_text_size"
+                android:background="@drawable/rectangle_border"
+                android:text="ID"
+                android:elevation="2dp" />
+
+            <TextView
+                android:id="@+id/d_stock_type_name_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/data_table_text_size"
+                android:background="@drawable/rectangle_border"
+                android:text="Stock Type"
+                android:elevation="2dp"/>
+
+            <TextView
+                android:id="@+id/d_brand_name_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/data_table_text_size"
+                android:background="@drawable/rectangle_border"
+                android:text="Brand"
+                android:elevation="2dp"/>
+
+            <TextView
+                android:id="@+id/d_select_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="@color/colorButtonCyan"
+                android:textSize="@dimen/data_table_text_size"
+                android:background="@drawable/rectangle_border"
+                android:textStyle="bold"
+                android:text="Select"
+                android:elevation="2dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/d_stock_type_ll_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/d_stock_type_id_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/data_table_text_size"
+                android:background="@drawable/rectangle_border"
+                android:text="ID"
+                android:elevation="2dp" />
+
+            <TextView
+                android:id="@+id/d_stock_type_name_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/data_table_text_size"
+                android:background="@drawable/rectangle_border"
+                android:text="Stock Type"
+                android:elevation="2dp"/>
+
+            <TextView
+                android:id="@+id/d_brand_name_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/data_table_text_size"
+                android:background="@drawable/rectangle_border"
+                android:text="Brand"
+                android:elevation="2dp"/>
+
+            <TextView
+                android:id="@+id/d_select_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="@color/colorButtonCyan"
+                android:textSize="@dimen/data_table_text_size"
+                android:background="@drawable/rectangle_border"
+                android:textStyle="bold"
+                android:text="Select"
+                android:elevation="2dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/d_stock_type_ll_5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/d_stock_type_id_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/data_table_text_size"
+                android:background="@drawable/rectangle_border"
+                android:text="ID"
+                android:elevation="2dp" />
+
+            <TextView
+                android:id="@+id/d_stock_type_name_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/data_table_text_size"
+                android:background="@drawable/rectangle_border"
+                android:text="Stock Type"
+                android:elevation="2dp"/>
+
+            <TextView
+                android:id="@+id/d_brand_name_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/data_table_text_size"
+                android:background="@drawable/rectangle_border"
+                android:text="Brand"
+                android:elevation="2dp"/>
+
+            <TextView
+                android:id="@+id/d_select_5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textColor="@color/colorButtonCyan"
+                android:textSize="@dimen/data_table_text_size"
+                android:background="@drawable/rectangle_border"
+                android:textStyle="bold"
+                android:text="Select"
+                android:elevation="2dp"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/select_stock_type_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </LinearLayout>
+
+    <!--*********************************************************-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dialog_button_margin"
+        android:orientation="horizontal">
+
+        <Button
+            style="Widget.AppCompat.Button.Colored"
+            android:id="@+id/d_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dialog_button_margin"
+            android:layout_marginRight="@dimen/dialog_button_margin"
+            android:gravity="center"
+            android:background="@color/colorButtonCyan"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dialog_button_text_size"
+            android:text="Cancel"
+            android:elevation="5dp"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

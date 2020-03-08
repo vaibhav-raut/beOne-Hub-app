@@ -1,0 +1,192 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="udaan.beone.mrpoint.activity.LoginActivity"
+    android:id="@+id/root_activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rectangle_border_fill50">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:id="@+id/login_title">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:elevation="5dp"
+            android:text="Hub Login"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/activity_title_text_size"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:padding="15dp"
+        android:layout_below="@id/login_title"
+        android:background="@drawable/rectangle_border">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/user_id_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <udaan.beone.mrpoint.widget.TextInputLayout
+                android:id="@+id/district_code_layout"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_district_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:inputType="textCapCharacters"
+                    android:maxLength="4"
+                    android:hint="District Code"
+                    android:padding="5dp"
+                    android:textSize="@dimen/activity_sub_title_text_size"/>
+            </udaan.beone.mrpoint.widget.TextInputLayout>
+
+
+            <udaan.beone.mrpoint.widget.TextInputLayout
+                android:id="@+id/group_no_layout"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_group_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="5"
+                    android:hint="Group No"
+                    android:padding="5dp"
+                    android:textSize="@dimen/activity_sub_title_text_size" />
+            </udaan.beone.mrpoint.widget.TextInputLayout>
+
+
+            <udaan.beone.mrpoint.widget.TextInputLayout
+                android:id="@+id/member_no_layout"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_member_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:hint="Member No"
+                    android:padding="5dp"
+                    android:textSize="@dimen/activity_sub_title_text_size" />
+            </udaan.beone.mrpoint.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/password_ll_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <udaan.beone.mrpoint.widget.TextInputLayout
+            android:id="@+id/password_layout"
+            android:layout_width="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="4"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:gravity="center"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:maxLength="32"
+                android:padding="5dp"
+                android:textSize="@dimen/activity_sub_title_text_size" />
+        </udaan.beone.mrpoint.widget.TextInputLayout>
+
+            <udaan.beone.mrpoint.widget.TextInputLayout
+                android:id="@+id/ip_layout"
+                android:layout_width="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_ip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:hint="IP"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:padding="5dp"
+                    android:textSize="@dimen/activity_sub_title_text_size" />
+            </udaan.beone.mrpoint.widget.TextInputLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/login_bn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent"
+            android:onClick="submit"
+            android:text="Login"
+            android:padding="5dp"
+            android:layout_margin="5dp"
+            android:textSize="@dimen/activity_sub_title_text_size"
+            android:textColor="@android:color/white" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:elevation="20dp"/>
+
+        </LinearLayout>
+
+        <!--<android.support.design.widget.FloatingActionButton-->
+        <!--android:id="@+id/fab"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:src="@drawable/ic_add_black"-->
+        <!--app:borderWidth="2dp"-->
+        <!--app:fabSize="mini"-->
+        <!--app:rippleColor="@color/colorPrimaryDark" />-->
+    </RelativeLayout>
+
+</RelativeLayout>

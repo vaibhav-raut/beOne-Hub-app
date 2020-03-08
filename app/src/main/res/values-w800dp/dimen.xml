@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively). -->
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="activity_title_text_size">36dp</dimen>
+    <dimen name="menu_title_text_size">24dp</dimen>
+    <dimen name="menu_title_size">48dp</dimen>
+    <dimen name="nav_drawer_margin_offset">-240dp</dimen>
+    <dimen name="drawer_header_height">180dp</dimen>
+    <dimen name="activity_sub_title_text_size">24dp</dimen>
+    <dimen name="data_table_text_size">20dp</dimen>
+    <dimen name="data_table_text_size2">22dp</dimen>
+
+    <!--Dialog -->
+    <dimen name="dialog_height">240dp</dimen>
+    <dimen name="dialog_button_height">50dp</dimen>
+    <dimen name="dialog_message_margin">20dp</dimen>
+    <dimen name="dialog_button_margin">30dp</dimen>
+    <dimen name="dialog_button_single_margin">80dp</dimen>
+    <dimen name="dialog_message_text_size">20dp</dimen>
+    <dimen name="dialog_button_text_size">24dp</dimen>
+    <dimen name="dialog_button_width">120dp</dimen>
+    <dimen name="dialog_button_margin_min">28dp</dimen>
+    <dimen name="dialog_button_margin_max">150dp</dimen>
+
+    <!--Stock Item Info Dialog -->
+    <dimen name="sii_outter_margin">20dp</dimen>
+    <dimen name="sii_padding_max">16dp</dimen>
+    <dimen name="sii_padding_min">3dp</dimen>
+
+    <!--Stock Action Activity-->
+    <dimen name="saa_button_margin_ver">16dp</dimen>
+    <dimen name="saa_button_margin_hor">16dp</dimen>
+    <dimen name="saa_button_margin_top1">15dp</dimen>
+    <dimen name="saa_button_text_size">14dp</dimen>
+
+</resources>

@@ -1,0 +1,83 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="1dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--*********************************************************-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/rs_item_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp" />
+
+        <TextView
+            android:id="@+id/rs_brand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="80"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/rs_stock_type"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="80"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/rs_item_mrp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/rs_item_mr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="40"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

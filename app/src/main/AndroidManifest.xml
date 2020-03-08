@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="udaan.beone.mrpoint" >
+
+    <uses-sdk android:minSdkVersion="22" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/beone_app_logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="udaan.beone.mrpoint.activity.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.accounts.AccountAuthenticator" />
+            </intent-filter>
+            <meta-data android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator" />
+        </activity>
+        <!--Admin Activities-->
+        <activity
+            android:name=".activity.HubActivity"
+            android:label="@string/title_activity_hub"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.StockTypeGenStockActivity"
+            android:label="@string/title_activity_stock_type_gen_stock"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.BrandGenStockActivity"
+            android:label="@string/title_activity_brand_gen_stock"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.RegenerateTagsActivity"
+            android:label="@string/title_activity_regenerate_stock"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PrintAllTagActivity"
+            android:label="@string/title_activity_print_all_tag"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PrintStockTypeTagActivity"
+            android:label="@string/title_activity_print_stock_type_tag"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PrintBrandTagActivity"
+            android:label="@string/title_activity_print_brand_tag"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.VerifyTagActivity"
+            android:label="@string/title_activity_verify_tag"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ItemInfoActivity"
+            android:label="@string/title_activity_item_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.EditStockInfoActivity"
+            android:label="@string/title_activity_edit_stock_type"
+            android:screenOrientation="portrait" />
+    </application>
+</manifest>

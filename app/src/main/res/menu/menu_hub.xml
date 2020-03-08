@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--All the items added without any grouping-->
+
+    <item
+        android:id="@+id/action_menu"
+        android:checkable="true"
+        android:title="Action @ Stock">
+        <menu>
+            <item
+                android:id="@+id/navigation_generate_for_stock_type"
+                android:icon="@drawable/ic_number_1"
+                android:title="Generate @ Stock Type" />
+            <item
+                android:id="@+id/navigation_generate_for_brand"
+                android:icon="@drawable/ic_number_2"
+                android:title="Generate @ Brand" />
+            <item
+                android:id="@+id/navigation_regenerate_for_stock_type"
+                android:icon="@drawable/ic_number_2"
+                android:title="Regenerate Tags" />
+            <item
+                android:id="@+id/navigation_print_stock_type_tag"
+                android:icon="@drawable/ic_number_2"
+                android:title="Print Tags @ Stock Type" />
+            <item
+                android:id="@+id/navigation_print_brand_tag"
+                android:icon="@drawable/ic_number_2"
+                android:title="Print Tags @ Brand" />
+            <item
+                android:id="@+id/navigation_print_all_tag"
+                android:icon="@drawable/ic_number_2"
+                android:title="Print Tags @ All" />
+            <item
+                android:id="@+id/navigation_verify_stock"
+                android:icon="@drawable/ic_number_3"
+                android:title="Verify" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/rest_menu"
+        android:checkable="true"
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/navigation_item_info"
+                android:icon="@drawable/ic_number_4"
+                android:title="Item Info" />
+            <item
+                android:id="@+id/navigation_edit_stock_type"
+                android:icon="@drawable/ic_number_4"
+                android:title="Edit Stock Type" />
+            <item
+                android:id="@+id/navigation_logout"
+                android:icon="@drawable/ic_number_4"
+                android:title="Logout" />
+        </menu>
+    </item>
+</menu>

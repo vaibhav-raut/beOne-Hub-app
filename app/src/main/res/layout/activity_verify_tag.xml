@@ -1,0 +1,185 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="5dp">
+        <TextView
+            android:id="@+id/gs_action_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="10dp"
+            android:text="Verify Item Tag"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/activity_title_text_size"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rectangle_border"
+        android:elevation="5dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="horizontal">
+
+        <Button
+            style="Widget.AppCompat.Button.Colored"
+            android:id="@+id/gs_clear_all_bn"
+            android:layout_marginLeft="@dimen/saa_button_margin_hor"
+            android:layout_marginRight="@dimen/saa_button_margin_hor"
+            android:layout_marginTop="@dimen/saa_button_margin_ver"
+            android:layout_marginBottom="@dimen/saa_button_margin_ver"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/menu_title_text_size"
+            android:text="Clear All"
+            android:background="@color/colorButtonAmber"
+            android:elevation="10dp"/>
+
+        <Button
+            style="Widget.AppCompat.Button.Colored"
+            android:id="@+id/gs_done_bn"
+            android:layout_marginLeft="@dimen/saa_button_margin_hor"
+            android:layout_marginRight="@dimen/saa_button_margin_hor"
+            android:layout_marginTop="@dimen/saa_button_margin_ver"
+            android:layout_marginBottom="@dimen/saa_button_margin_ver"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/menu_title_text_size"
+            android:text="Done"
+            android:background="@color/colorButtonAmber"
+            android:elevation="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="horizontal">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/gs_stock_item_id_lo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp">
+
+            <EditText
+                android:id="@+id/gs_stock_item_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTextPrimary"
+                android:textSize="@dimen/menu_title_text_size"
+                android:inputType="number"
+                android:maxLength="8"
+                android:hint="Item Id" />
+        </android.support.design.widget.TextInputLayout>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:visibility="gone"
+            android:elevation="20dp"/>
+
+        <Button
+            style="Widget.AppCompat.Button.Colored"
+            android:id="@+id/gs_verify_item_bn"
+            android:layout_marginLeft="@dimen/saa_button_margin_hor"
+            android:layout_marginRight="@dimen/saa_button_margin_hor"
+            android:layout_marginTop="@dimen/saa_button_margin_top1"
+            android:layout_marginBottom="@dimen/saa_button_margin_ver"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/menu_title_text_size"
+            android:textAlignment="center"
+            android:text="Verify"
+            android:background="@color/colorButtonCyan"
+            android:elevation="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/gs_item_verified"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size2"
+            android:text="Items Verified"
+            android:background="@drawable/rectangle_border_fill50"/>
+
+        <TextView
+            android:id="@+id/gs_item_verified_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size2"
+            android:background="@drawable/rectangle_border"/>
+        </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <view
+        android:id="@+id/show_item_view"
+        class="android.support.v7.widget.RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:layout_margin="8dp"
+        android:elevation="5dp"
+        android:layout_centerInParent="true" />
+
+</LinearLayout>

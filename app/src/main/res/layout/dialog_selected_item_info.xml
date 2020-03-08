@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp">
+
+    <LinearLayout
+        android:id="@+id/data_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/sii_outter_margin"
+        android:orientation="vertical">
+
+    <!--*********************************************************-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/stock_item_id"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:maxLines="1"
+            android:paddingTop="@dimen/sii_padding_min"
+            android:paddingBottom="@dimen/sii_padding_min"
+            android:paddingRight="@dimen/sii_padding_max"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Stock Item Id"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/stock_item_id_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:maxLines="1"
+            android:paddingTop="@dimen/sii_padding_min"
+            android:paddingBottom="@dimen/sii_padding_min"
+            android:paddingLeft="@dimen/sii_padding_max"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+    </LinearLayout>
+
+    <!--*********************************************************-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/stock_item_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:maxLines="1"
+            android:paddingTop="@dimen/sii_padding_min"
+            android:paddingBottom="@dimen/sii_padding_min"
+            android:paddingRight="@dimen/sii_padding_max"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Stock Item"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/stock_item_name_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:maxLines="1"
+            android:paddingTop="@dimen/sii_padding_min"
+            android:paddingBottom="@dimen/sii_padding_min"
+            android:paddingLeft="@dimen/sii_padding_max"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+    </LinearLayout>
+
+    <!--*********************************************************-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/design_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:maxLines="1"
+            android:paddingTop="@dimen/sii_padding_min"
+            android:paddingBottom="@dimen/sii_padding_min"
+            android:paddingRight="@dimen/sii_padding_max"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Design No"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/design_no_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:maxLines="1"
+            android:paddingTop="@dimen/sii_padding_min"
+            android:paddingBottom="@dimen/sii_padding_min"
+            android:paddingLeft="@dimen/sii_padding_max"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+    </LinearLayout>
+
+    <!--*********************************************************-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/stock_type_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:maxLines="1"
+            android:paddingTop="@dimen/sii_padding_min"
+            android:paddingBottom="@dimen/sii_padding_min"
+            android:paddingRight="@dimen/sii_padding_max"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Stock Type"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/stock_type_name_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:maxLines="1"
+            android:paddingTop="@dimen/sii_padding_min"
+            android:paddingBottom="@dimen/sii_padding_min"
+            android:paddingLeft="@dimen/sii_padding_max"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+    </LinearLayout>
+
+    <!--*********************************************************-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/brand_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:maxLines="1"
+            android:paddingTop="@dimen/sii_padding_min"
+            android:paddingBottom="@dimen/sii_padding_min"
+            android:paddingRight="@dimen/sii_padding_max"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Brand"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/brand_name_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:maxLines="1"
+            android:paddingTop="@dimen/sii_padding_min"
+            android:paddingBottom="@dimen/sii_padding_min"
+            android:paddingLeft="@dimen/sii_padding_max"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+    </LinearLayout>
+
+    <!--*********************************************************-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_status"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:maxLines="1"
+            android:paddingTop="@dimen/sii_padding_min"
+            android:paddingBottom="@dimen/sii_padding_min"
+            android:paddingRight="@dimen/sii_padding_max"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Status"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/item_status_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:maxLines="1"
+            android:paddingTop="@dimen/sii_padding_min"
+            android:paddingBottom="@dimen/sii_padding_min"
+            android:paddingLeft="@dimen/sii_padding_max"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+    </LinearLayout>
+
+    <!--*********************************************************-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/item_condition"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:maxLines="1"
+            android:paddingTop="@dimen/sii_padding_min"
+            android:paddingBottom="@dimen/sii_padding_min"
+            android:paddingRight="@dimen/sii_padding_max"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Condition"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/item_condition_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:maxLines="1"
+            android:paddingTop="@dimen/sii_padding_min"
+            android:paddingBottom="@dimen/sii_padding_min"
+            android:paddingLeft="@dimen/sii_padding_max"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+    </LinearLayout>
+
+    <!--*********************************************************-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mr_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:maxLines="1"
+            android:paddingTop="@dimen/sii_padding_min"
+            android:paddingBottom="@dimen/sii_padding_min"
+            android:paddingRight="@dimen/sii_padding_max"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="WSP Price"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/mr_price_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:maxLines="1"
+            android:paddingTop="@dimen/sii_padding_min"
+            android:paddingBottom="@dimen/sii_padding_min"
+            android:paddingLeft="@dimen/sii_padding_max"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+    </LinearLayout>
+
+    <!--*********************************************************-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/mrp_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:maxLines="1"
+            android:paddingTop="@dimen/sii_padding_min"
+            android:paddingBottom="@dimen/sii_padding_min"
+            android:paddingRight="@dimen/sii_padding_max"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="MRP Price"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/mrp_price_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:maxLines="1"
+            android:paddingTop="@dimen/sii_padding_min"
+            android:paddingBottom="@dimen/sii_padding_min"
+            android:paddingLeft="@dimen/sii_padding_max"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+    </LinearLayout>
+
+    <!--*********************************************************-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/dis_mrp_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:maxLines="1"
+            android:paddingTop="@dimen/sii_padding_min"
+            android:paddingBottom="@dimen/sii_padding_min"
+            android:paddingRight="@dimen/sii_padding_max"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Discount MRP Price"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/dis_mrp_price_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:maxLines="1"
+            android:paddingTop="@dimen/sii_padding_min"
+            android:paddingBottom="@dimen/sii_padding_min"
+            android:paddingLeft="@dimen/sii_padding_max"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+    </LinearLayout>
+
+    <!--*********************************************************-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/sold_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:maxLines="1"
+            android:paddingTop="@dimen/sii_padding_min"
+            android:paddingBottom="@dimen/sii_padding_min"
+            android:paddingRight="@dimen/sii_padding_max"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Sold Price"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/sold_price_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:maxLines="1"
+            android:paddingTop="@dimen/sii_padding_min"
+            android:paddingBottom="@dimen/sii_padding_min"
+            android:paddingLeft="@dimen/sii_padding_max"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+    </LinearLayout>
+
+    <!--*********************************************************-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/discount_am"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:maxLines="1"
+            android:paddingTop="@dimen/sii_padding_min"
+            android:paddingBottom="@dimen/sii_padding_min"
+            android:paddingRight="@dimen/sii_padding_max"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="Discount Amount"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/discount_am_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:maxLines="1"
+            android:paddingTop="@dimen/sii_padding_min"
+            android:paddingBottom="@dimen/sii_padding_min"
+            android:paddingLeft="@dimen/sii_padding_max"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+    </LinearLayout>
+
+    <!--*********************************************************-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/vat_am"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:maxLines="1"
+            android:paddingTop="@dimen/sii_padding_min"
+            android:paddingBottom="@dimen/sii_padding_min"
+            android:paddingRight="@dimen/sii_padding_max"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:text="VAT Amount"
+            android:background="@drawable/rectangle_border_fill50"
+            android:elevation="2dp"/>
+
+        <TextView
+            android:id="@+id/vat_am_v"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:maxLines="1"
+            android:paddingTop="@dimen/sii_padding_min"
+            android:paddingBottom="@dimen/sii_padding_min"
+            android:paddingLeft="@dimen/sii_padding_max"
+            android:textColor="@color/colorTextPrimary"
+            android:textSize="@dimen/data_table_text_size"
+            android:background="@drawable/rectangle_border"
+            android:elevation="2dp"/>
+    </LinearLayout>
+
+    <!--*********************************************************-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dialog_button_margin"
+        android:orientation="horizontal">
+
+        <Button
+            style="Widget.AppCompat.Button.Colored"
+            android:id="@+id/d_button_ok"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dialog_button_height"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dialog_button_margin"
+            android:layout_marginRight="@dimen/dialog_button_margin"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/colorButtonCyan"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dialog_button_text_size"
+            android:text="Ok"
+            android:elevation="5dp"/>
+
+        <Button
+            style="Widget.AppCompat.Button.Colored"
+            android:id="@+id/d_button_deselect"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dialog_button_height"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/dialog_button_margin"
+            android:layout_marginRight="@dimen/dialog_button_margin"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@color/colorButtonAmber"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/dialog_button_text_size"
+            android:text="Deselect"
+            android:elevation="5dp"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

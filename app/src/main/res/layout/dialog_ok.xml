@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dialog_height"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/d_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dialog_message_margin"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:padding="@dimen/dialog_message_margin"
+        android:textSize="@dimen/dialog_message_text_size"
+        android:textColor="@color/colorTextPrimary"
+        android:background="@drawable/rectangle_border_fill50" />
+
+    <Button
+        style="Widget.AppCompat.Button.Colored"
+        android:id="@+id/d_button"
+        android:layout_width="@dimen/dialog_button_width"
+        android:layout_height="@dimen/dialog_button_height"
+        android:layout_marginTop="@dimen/dialog_button_margin_min"
+        android:layout_marginBottom="@dimen/dialog_button_margin_min"
+        android:layout_marginLeft="@dimen/dialog_button_margin_max"
+        android:layout_marginRight="@dimen/dialog_button_margin_max"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/d_message"
+        android:gravity="center"
+        android:background="@color/colorButtonAmber"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/dialog_button_text_size"
+        android:elevation="5dp"/>
+
+</RelativeLayout>
